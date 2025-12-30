@@ -1,0 +1,23 @@
+<svg width="470" height="110" viewBox="0 0 470 110" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .brand-text { font-family: 'Inter', sans-serif; font-weight: 700; fill: #334155; }
+    .tagline-text { font-family: 'Inter', sans-serif; font-weight: 400; fill: #64748B; letter-spacing: 0.5px; }
+    .tagline-text2 { font-family: 'Inter', sans-serif; font-weight: 800; fill: #06B6D4; letter-spacing: 0.5px; }
+  </style>
+
+  <g transform="translate(10, 20)">
+    <rect x="0" y="0" width="20" height="80" rx="10" transform="translate(30, 0) rotate(45 10 40)" fill="#06B6D4" />
+    
+    <path d="M15 65 L45 35" stroke="#0891B2" stroke-width="20" stroke-linecap="round" />
+    
+    <rect x="0" y="0" width="20" height="80" rx="10" transform="translate(30, 0) rotate(-45 10 40)" fill="#06B6D4" opacity="0.9"/>
+    
+    <circle cx="68" cy="12" r="6" fill="#84CC16" />
+  </g>
+
+  <g transform="translate(110, 0)">
+    <text x="0" y="60" font-size="60" class="brand-text">xonvera</text>
+    <text x="2" y="90" font-size="20" class="tagline-text">FINANCIAL CLARITY.</text>
+    <text x="210" y="90" font-size="20" class="tagline-text2">SIMPLIFIED.</text>
+  </g>
+</svg>

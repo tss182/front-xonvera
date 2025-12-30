@@ -1,0 +1,11 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0, 0)">
+    <rect x="0" y="0" width="20" height="80" rx="10" transform="translate(30, 0) rotate(45 10 40)" fill="#06B6D4" />
+    
+    <path d="M15 65 L45 35" stroke="#0891B2" stroke-width="20" stroke-linecap="round" />
+    
+    <rect x="0" y="0" width="20" height="80" rx="10" transform="translate(30, 0) rotate(-45 10 40)" fill="#06B6D4" opacity="0.9"/>
+    
+    <circle cx="68" cy="12" r="6" fill="#84CC16" />
+  </g>
+</svg>
