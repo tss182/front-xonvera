@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "login": "Masuk",
+    "register": "Daftar"
+  },
+  "hero": {
+    "title": "Selamat Datang di Xonvera",
+    "subtitle": "Transform your business with our innovative solution",
+    "cta": "Get Started"
+  },
+  "features": {
+    "title": "Our Features",
+    "feature1": "High Performance",
+    "feature2": "Secure & Reliable",
+    "feature3": "Easy to Use",
+    "feature4": "24/7 Support"
+  },
+  "footer": {
+    "copyright": "© 2025 Xonvera. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

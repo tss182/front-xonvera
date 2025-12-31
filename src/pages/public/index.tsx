@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { 
   Layout, 
   Typography, 
@@ -16,13 +15,16 @@ import {
 import { 
   CheckCircleFilled, 
 } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from '../../components/LanguageSwitcher';
 
 const { Header, Content, Footer } = Layout;
 const { Title, Text, Paragraph } = Typography;
 const { useToken } = theme;
 
 export const IndexPage = () => {
-  const { token } = useToken(); 
+  const { token } = useToken();
+  const { t } = useTranslation(); 
 
   return (
     <ConfigProvider
@@ -51,8 +53,9 @@ export const IndexPage = () => {
         }}>
           <img src="/favicon.svg" style={{ height: 60 }} />
           <Space>
-            <Button type="primary" ghost>Login</Button>
-            <Button type="primary">Register</Button>
+            <LanguageSwitcher />
+            <Button type="primary" ghost>{t('nav.login')}</Button>
+            <Button type="primary">{t('nav.register')}</Button>
           </Space>
         </Header>
 
@@ -173,10 +176,10 @@ export const IndexPage = () => {
         <Footer style={{ textAlign: 'center', background: '#0f172a', color: '#94a3b8' }}>
           <Space direction="vertical">
             <img src="/logo.svg" style={{ height: 30, filter: 'grayscale(1) brightness(2)' }} />
-            <Text style={{ color: '#64748b' }}>© 2025 Xonvera. All rights reserved.</Text>
+            <Text style={{ color: '#64748b' }}>{t('footer.copyright')}</Text>
             <Space split={<Divider type="vertical" style={{ borderColor: '#334155' }} />}>
-              <a href="#" style={{ color: '#94a3b8' }}>Privacy Policy</a>
-              <a href="#" style={{ color: '#94a3b8' }}>Terms of Service</a>
+              <a href="#" style={{ color: '#94a3b8' }}>{t('footer.privacy')}</a>
+              <a href="#" style={{ color: '#94a3b8' }}>{t('footer.terms')}</a>
               <a href="#" style={{ color: '#94a3b8' }}>Contact</a>
             </Space>
           </Space>
@@ -213,7 +216,6 @@ function PricingCard({
   price, 
   oldPrice, 
   period, 
-  features, 
   active = false, 
   saveText,
   buttonType = 'default'
@@ -245,15 +247,6 @@ function PricingCard({
       <Button type={buttonType} block size="large" style={{ marginBottom: 24 }}>
         Pilih Paket
       </Button>
-
-      <Space direction="vertical" style={{ width: '100%', textAlign: 'left' }}>
-        {features.map((f: string, i: number) => (
-          <Space key={i}>
-            <CheckCircleFilled style={{ color: active ? token.colorPrimary : '#cbd5e1' }} />
-            <Text>{f}</Text>
-          </Space>
-        ))}
-      </Space>
     </Card>
   );
 }
