@@ -19,5 +19,97 @@
     "copyright": "© 2025 Xonvera. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
+  },
+  "auth": {
+    "login": {
+      "title": "Selamat Datang Kembali",
+      "subtitle": "Masuk untuk melanjutkan ke akun Anda",
+      "emailOrPhonePlaceholder": "Masukkan email atau nomor telepon Anda",
+      "passwordPlaceholder": "Masukkan kata sandi Anda",
+      "emailOrPhoneRequired": "Harap masukkan email atau nomor telepon Anda",
+      "passwordRequired": "Harap masukkan kata sandi Anda",
+      "forgotPassword": "Lupa kata sandi?",
+      "loginButton": "Masuk",
+      "or": "ATAU",
+      "loginWithGoogle": "Lanjutkan dengan Google",
+      "noAccount": "Belum punya akun?",
+      "registerLink": "Daftar sekarang"
+    },
+    "register": {
+      "title": "Buat Akun",
+      "subtitle": "Daftar untuk memulai",
+      "namePlaceholder": "Masukkan nama lengkap Anda",
+      "emailPlaceholder": "Masukkan email Anda",
+      "phonePlaceholder": "Masukkan nomor telepon Anda",
+      "passwordPlaceholder": "Buat kata sandi",
+      "confirmPasswordPlaceholder": "Konfirmasi kata sandi Anda",
+      "nameRequired": "Harap masukkan nama Anda",
+      "nameMinLength": "Nama minimal 2 karakter",
+      "emailRequired": "Harap masukkan email Anda",
+      "emailInvalid": "Harap masukkan email yang valid",
+      "phoneRequired": "Harap masukkan nomor telepon Anda",
+      "phoneInvalid": "Harap masukkan nomor telepon yang valid",
+      "passwordRequired": "Harap masukkan kata sandi Anda",
+      "passwordMinLength": "Kata sandi minimal 8 karakter",
+      "confirmPasswordRequired": "Harap konfirmasi kata sandi Anda",
+      "passwordMismatch": "Kata sandi tidak cocok",
+      "registerButton": "Buat Akun",
+      "or": "ATAU",
+      "registerWithGoogle": "Lanjutkan dengan Google",
+      "haveAccount": "Sudah punya akun?",
+      "loginLink": "Masuk di sini"
+    },
+    "forgotPassword": {
+      "title": "Lupa Kata Sandi",
+      "subtitle": "Masukkan email Anda untuk mengatur ulang kata sandi",
+      "emailPlaceholder": "Masukkan email Anda",
+      "emailRequired": "Harap masukkan email Anda",
+      "emailInvalid": "Harap masukkan email yang valid",
+      "submitButton": "Kirim Tautan Reset",
+      "backToLogin": "Kembali ke Masuk",
+      "successTitle": "Periksa Email Anda",
+      "successMessage": "Kami telah mengirim tautan reset kata sandi ke alamat email Anda"
+    }
+  },
+  "dashboard": {
+    "title": "Ringkasan Dashboard",
+    "recentInvoices": "Invoice Terbaru",
+    "quickStats": "Statistik Cepat",
+    "viewAll": "Lihat Semua",
+    "menu": {
+      "overview": "Ringkasan",
+      "invoices": "Invoice",
+      "allInvoices": "Semua Invoice",
+      "createInvoice": "Buat Invoice",
+      "expenses": "Pengeluaran",
+      "allExpenses": "Semua Pengeluaran",
+      "addExpense": "Tambah Pengeluaran",
+      "reports": "Laporan",
+      "settings": "Pengaturan"
+    },
+    "user": {
+      "profile": "Profil",
+      "logout": "Keluar"
+    },
+    "stats": {
+      "totalBalance": "Total Saldo",
+      "totalIncome": "Total Pendapatan",
+      "totalExpenses": "Total Pengeluaran"
+    },
+    "table": {
+      "invoice": "Invoice",
+      "client": "Klien",
+      "amount": "Jumlah",
+      "status": "Status",
+      "date": "Tanggal"
+    },
+    "status": {
+      "paid": "Lunas",
+      "pending": "Menunggu"
+    },
+    "quickStats": {
+      "invoices": "Total Invoice",
+      "expenses": "Total Pengeluaran"
+    }
   }
 }

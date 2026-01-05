@@ -16,6 +16,8 @@ import {
   CheckCircleFilled, 
 } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
+import { Link } from '@tanstack/react-router';
+import { useEffect } from 'react';
 import { LanguageSwitcher } from '../../components/LanguageSwitcher';
 
 const { Header, Content, Footer } = Layout;
@@ -24,7 +26,11 @@ const { useToken } = theme;
 
 export const IndexPage = () => {
   const { token } = useToken();
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = 'Xonvera - Financial Clarity. Simplified.';
+  }, []);
 
   return (
     <ConfigProvider
@@ -54,8 +60,12 @@ export const IndexPage = () => {
           <img src="/favicon.svg" style={{ height: 60 }} />
           <Space>
             <LanguageSwitcher />
-            <Button type="primary" ghost>{t('nav.login')}</Button>
-            <Button type="primary">{t('nav.register')}</Button>
+            <Link to="/login">
+              <Button type="primary" ghost>{t('nav.login')}</Button>
+            </Link>
+            <Link to="/register">
+              <Button type="primary">{t('nav.register')}</Button>
+            </Link>
           </Space>
         </Header>
 

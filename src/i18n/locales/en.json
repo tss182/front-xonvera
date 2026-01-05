@@ -19,5 +19,97 @@
     "copyright": "© 2025 Xonvera. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Login to continue to your account",
+      "emailOrPhonePlaceholder": "Enter your email or phone number",
+      "passwordPlaceholder": "Enter your password",
+      "emailOrPhoneRequired": "Please enter your email or phone number",
+      "passwordRequired": "Please enter your password",
+      "forgotPassword": "Forgot password?",
+      "loginButton": "Login",
+      "or": "OR",
+      "loginWithGoogle": "Continue with Google",
+      "noAccount": "Don't have an account?",
+      "registerLink": "Register now"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Sign up to get started",
+      "namePlaceholder": "Enter your full name",
+      "emailPlaceholder": "Enter your email",
+      "phonePlaceholder": "Enter your phone number",
+      "passwordPlaceholder": "Create a password",
+      "confirmPasswordPlaceholder": "Confirm your password",
+      "nameRequired": "Please enter your name",
+      "nameMinLength": "Name must be at least 2 characters",
+      "emailRequired": "Please enter your email",
+      "emailInvalid": "Please enter a valid email",
+      "phoneRequired": "Please enter your phone number",
+      "phoneInvalid": "Please enter a valid phone number",
+      "passwordRequired": "Please enter your password",
+      "passwordMinLength": "Password must be at least 8 characters",
+      "confirmPasswordRequired": "Please confirm your password",
+      "passwordMismatch": "Passwords do not match",
+      "registerButton": "Create Account",
+      "or": "OR",
+      "registerWithGoogle": "Continue with Google",
+      "haveAccount": "Already have an account?",
+      "loginLink": "Login here"
+    },
+    "forgotPassword": {
+      "title": "Forgot Password",
+      "subtitle": "Enter your email to reset your password",
+      "emailPlaceholder": "Enter your email",
+      "emailRequired": "Please enter your email",
+      "emailInvalid": "Please enter a valid email",
+      "submitButton": "Send Reset Link",
+      "backToLogin": "Back to Login",
+      "successTitle": "Check Your Email",
+      "successMessage": "We've sent a password reset link to your email address"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard Overview",
+    "recentInvoices": "Recent Invoices",
+    "quickStats": "Quick Stats",
+    "viewAll": "View All",
+    "menu": {
+      "overview": "Overview",
+      "invoices": "Invoices",
+      "allInvoices": "All Invoices",
+      "createInvoice": "Create Invoice",
+      "expenses": "Expenses",
+      "allExpenses": "All Expenses",
+      "addExpense": "Add Expense",
+      "reports": "Reports",
+      "settings": "Settings"
+    },
+    "user": {
+      "profile": "Profile",
+      "logout": "Logout"
+    },
+    "stats": {
+      "totalBalance": "Total Balance",
+      "totalIncome": "Total Income",
+      "totalExpenses": "Total Expenses"
+    },
+    "table": {
+      "invoice": "Invoice",
+      "client": "Client",
+      "amount": "Amount",
+      "status": "Status",
+      "date": "Date"
+    },
+    "status": {
+      "paid": "Paid",
+      "pending": "Pending"
+    },
+    "quickStats": {
+      "invoices": "Total Invoices",
+      "expenses": "Total Expenses"
+    }
   }
 }
