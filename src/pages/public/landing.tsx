@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import {PricingCard} from "../../components/PricingCard";
 
 
 export const LandingPage = () => {
@@ -23,46 +24,14 @@ export const LandingPage = () => {
             <main className="flex-1">
                <img src="/logo.svg" alt="logoLanding Illustration" className="mx-auto w-2/3" />
 
-               <div className="max-w-sm relative rounded-2xl border border-gray-200 
-               bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#06B6D4]">
-
-                    <div className="absolute top-0 right-0 translate-x-6 translate-y-3
-                            bg-green-600 text-white text-xs font-bold rotate-45
-                            px-7 py-2">
-                        Best Value
-                    </div>
-
-                    <h3 className="text-lg font-semibold text-gray-800">
-                        Basic Plan
-                    </h3>
-
-                    <p className="mt-2 text-sm text-gray-500">
-                        Cocok untuk pemula
-                    </p>
-
-                    <div className="mt-6">
-                        <span className="text-4xl font-bold text-gray-900">Rp99k</span>
-                        <span className="text-sm text-gray-500">/bulan</span>
-                    </div>
-
-                    <ul className="mt-6 space-y-3 text-sm text-gray-600">
-                        <li className="flex items-center gap-2">
-                        <span className="text-green-500">✓</span> 5 Project
-                        </li>
-                        <li className="flex items-center gap-2">
-                        <span className="text-green-500">✓</span> Email Support
-                        </li>
-                        <li className="flex items-center gap-2">
-                        <span className="text-green-500">✓</span> Basic Analytics
-                        </li>
-                    </ul>
-
-                    <button
-                        className="btn btn-primary w-full mt-5">
-                        Pilih Paket
-                    </button>
-                </div>
-
+               
+                <PricingCard
+                    title="Basic Plan"
+                    description="Cocok untuk pemula"
+                    price="Rp. 40.000"
+                    period="bulan"
+                    features={["5 Project", "Email Support", "Basic Analytics"]}
+                    active={false} />
             </main>
             
             <footer className="bg-slate-900 text-slate-400 py-8 text-center">
