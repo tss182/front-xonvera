@@ -1,6 +1,7 @@
 import { RootComponent } from './pages/_root'
 import { createRootRoute, createRoute, createRouter, RouterProvider } from '@tanstack/react-router'
 import { IndexPage } from './pages/public/index'
+import { LandingPage } from './pages/public/landing'
 import { LoginPage } from './pages/auth/login'
 import { RegisterPage } from './pages/auth/register'
 import { ForgotPasswordPage } from './pages/auth/forgot-password'
@@ -24,6 +25,13 @@ const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/',
   component: IndexPage,
+})
+
+// Landing page (root path)
+const landingRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/landing',
+  component: LandingPage,
 })
 
 // Auth routes
@@ -109,6 +117,7 @@ const dashboardTreeWithChildren = dashboardLayoutRoute.addChildren([
 // Create route tree
 const routeTree = rootRoute.addChildren([
   indexRoute,
+  landingRoute,
   loginRoute,
   registerRoute,
   forgotPasswordRoute,

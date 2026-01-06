@@ -1,25 +1,44 @@
 @import "tailwindcss";
 
-:root {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer base {
+  :root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+      'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  #root {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg
+           px-5 py-2.5 text-sm font-semibold
+           transition-all duration-200
+           disabled:opacity-50 disabled:pointer-events-none h-10 w-28 border-2 border-[#06B6D4] cursor-pointer;
+  }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
+  .btn-primary {
+    @apply bg-[#06B6D4] hover:bg-white text-white hover:text-[#06B6D4] hover:border-[#06B6D4]/40;
+  }
 
-#root {
-  width: 100%;
-  height: 100%;
+  .btn-primary-outline {
+    @apply  bg-white hover:bg-[#06B6D4]/60 text-[#06B6D4] hover:text-white hover:border-[#06B6D4]/40;
+  }
 }
